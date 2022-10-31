@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div data-fp class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+		<section data-fp-section class="page__skills skills">
+			<div class="skills__container">
+			  <div class="skills__title title">
+				<div class="title__label">Статус готовности </div>
+				<h2 class="title__value">ВАШЕЙ ВИЗЫ</h2>
+			  </div>
+			  <div class="skills__body">
+				<div class="skills__timeline timeline">
+				  <div class="timeline__item ">
+					<div class="timeline__title">Сбор всех необходимых документов</div>
+					<div class="timeline__date">5-7 рабочих дней</div>
+				  </div>
+				  <div class="timeline__item red">
+					<div class="timeline__title">Ожидание даты от консула</div>
+					<div class="timeline__date">7-10 рабочих дней</div>
+				  </div>
+				  <div class="timeline__item">
+					<div class="timeline__title">Ожидание готовности визы после подачи</div>
+					<div class="timeline__date">до 10 рабочих дней</div>
+				  </div>
+				</div>
+				<div class="skills__content content-skills">
+				  <div class="content-skills__text text">
+					<p>
+						Добрый день! Спешим вам сообщить, что пакет ваших документов готов и отправлен консулу на рассмотрение.В среднем ответ от консула приходит в течении 10 рабочих дней. Вместе с ответом мы получим и сообщим вам дату подачи.Ваша виза готова на 50%.<br/>Хорошего вам дня!<br/> С Уважением, Евгений Немчинский - основатель сообщества NativeHelpers.<br/>Контакты:<br/>- Viber: +48510657874<br/>- WhatsApp: +48780114988<br/>- Telegram: @VizzaForBelarus<br/>- Почта: nativehelpersofficial@gmail.com<br/>- Телефон: +48780114988<br/>
+						- Ul.Tadeusza Boya Żeleńskiego 2 00-621
+					</p>
+				  </div>
+				  <div class="content-skills__items">
+					<div class="content-skills__item">
+					  <div class="content-skills__label">Ваша виза готова на 40%</div>
+					  <div class="content-skills__line">
+						<span style="width: 40%"></span>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>
