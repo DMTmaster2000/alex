@@ -516,6 +516,15 @@ body::after {
   left: 0;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.75);
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.header._header-scroll {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .header__container {
@@ -1355,18 +1364,25 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 25px;
 }
 
 .contacts__form {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  width: 70%;
 }
 
 .contacts__body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  width: 70%;
 }
 
 .form {
@@ -1721,10 +1737,6 @@ textarea.form__input {
     gap: 2.5rem;
   }
 
-  .contacts__body {
-    padding-left: 6.5625rem;
-  }
-
   .list-contacts {
     gap: 3rem;
   }
@@ -1839,10 +1851,6 @@ textarea.form__input {
 
   .content-skills__items {
     gap: 1.25rem;
-  }
-
-  .contacts__body {
-    padding-left: 1.25rem;
   }
 
   .list-contacts {
@@ -2373,18 +2381,6 @@ textarea.form__input {
 @supports not (gap: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem )) {
     .content-skills__items {
       gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 56.875);
-    }
-}
-
-@supports (padding-left: clamp( 1.25rem , -0.6181318681rem  +  9.3406593407vw , 6.5625rem )) {
-    .contacts__body {
-      padding-left: clamp( 1.25rem , -0.6181318681rem  +  9.3406593407vw , 6.5625rem );
-    }
-}
-
-@supports not (padding-left: clamp( 1.25rem , -0.6181318681rem  +  9.3406593407vw , 6.5625rem )) {
-    .contacts__body {
-      padding-left: calc(1.25rem + 5.3125 * (100vw - 20rem) / 56.875);
     }
 }
 
